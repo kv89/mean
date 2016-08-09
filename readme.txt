@@ -8,3 +8,4 @@ https://thinkster.io/a-better-way-to-learn-angularjs/config-function
 
 todo: 1. package json for all packages used..
 npm install -g express-generator
+https://shapeshed.com/creating-a-basic-site-with-node-and-express/
