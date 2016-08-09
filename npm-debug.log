@@ -1,0 +1,896 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'express-generator' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of C:\Users\vishaldk\AppData\Roaming\npm\package.json
+5 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\package.json
+6 silly cache add args [ 'express-generator', null ]
+7 verbose cache add spec express-generator
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'express-generator',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'express-generator',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed express-generator@*
+10 verbose addNamed "*" is a valid semver range for express-generator
+11 silly addNameRange { name: 'express-generator', range: '*', hasData: false }
+12 silly mapToRegistry name express-generator
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/express-generator
+16 verbose addNameRange registry:https://registry.npmjs.org/express-generator not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/express-generator
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 4:59:51 PM
+20 verbose request id 3e618943970ecf4d
+21 verbose etag "34DE5I2RH7S4BSXOPDR44S7A7"
+22 http request GET https://registry.npmjs.org/express-generator
+23 http 304 https://registry.npmjs.org/express-generator
+24 verbose headers { date: 'Tue, 09 Aug 2016 11:29:53 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"34DE5I2RH7S4BSXOPDR44S7A7"',
+24 verbose headers   age: '135',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '25',
+24 verbose headers   'x-timer': 'S1470742193.210940,VS0,VE0',
+24 verbose headers   vary: 'Accept-Encoding' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Tue, 09 Aug 2016 11:29:53 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"34DE5I2RH7S4BSXOPDR44S7A7"',
+25 silly get     age: '135',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-sin6921-SIN',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '25',
+25 silly get     'x-timer': 'S1470742193.210940,VS0,VE0',
+25 silly get     vary: 'Accept-Encoding' } ]
+26 verbose etag https://registry.npmjs.org/express-generator from cache
+27 verbose get saving express-generator to C:\Users\vishaldk\AppData\Roaming\npm-cache\registry.npmjs.org\express-generator\.cache.json
+28 silly addNameRange number 2 { name: 'express-generator', range: '*', hasData: true }
+29 silly addNameRange versions [ 'express-generator',
+29 silly addNameRange   [ '1.0.0',
+29 silly addNameRange     '3.0.0',
+29 silly addNameRange     '4.0.0',
+29 silly addNameRange     '4.2.0',
+29 silly addNameRange     '4.8.0',
+29 silly addNameRange     '4.9.0',
+29 silly addNameRange     '4.10.0',
+29 silly addNameRange     '4.11.0',
+29 silly addNameRange     '4.11.1',
+29 silly addNameRange     '4.11.2',
+29 silly addNameRange     '4.12.0',
+29 silly addNameRange     '4.12.1',
+29 silly addNameRange     '4.12.4',
+29 silly addNameRange     '4.13.0',
+29 silly addNameRange     '4.13.1',
+29 silly addNameRange     '4.13.4' ] ]
+30 silly addNamed express-generator@4.13.4
+31 verbose addNamed "4.13.4" is a plain semver version for express-generator
+32 silly cache afterAdd express-generator@4.13.4
+33 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\express-generator\4.13.4\package\package.json not in flight; writing
+34 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\express-generator\4.13.4\package\package.json written
+35 silly install resolved [ { name: 'express-generator',
+35 silly install resolved     description: 'Express\' application generator',
+35 silly install resolved     version: '4.13.4',
+35 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+35 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+35 silly install resolved     keywords:
+35 silly install resolved      [ 'express',
+35 silly install resolved        'framework',
+35 silly install resolved        'sinatra',
+35 silly install resolved        'web',
+35 silly install resolved        'rest',
+35 silly install resolved        'restful',
+35 silly install resolved        'router',
+35 silly install resolved        'app',
+35 silly install resolved        'api' ],
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'git+https://github.com/expressjs/generator.git' },
+35 silly install resolved     license: 'MIT',
+35 silly install resolved     dependencies: { commander: '2.7.1', mkdirp: '0.5.1', 'sorted-object': '2.0.0' },
+35 silly install resolved     main: 'bin/express',
+35 silly install resolved     preferGlobal: true,
+35 silly install resolved     bin: { express: './bin/express' },
+35 silly install resolved     devDependencies: { mocha: '2.4.5', rimraf: '2.5.2', supertest: '1.2.0' },
+35 silly install resolved     engines: { node: '>= 0.10' },
+35 silly install resolved     files: [ 'LICENSE', 'bin/', 'templates/' ],
+35 silly install resolved     scripts:
+35 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+35 silly install resolved        'test-ci': 'mocha --reporter spec --check-leaks test/' },
+35 silly install resolved     gitHead: 'f7b1543a297425f541f0b18c3312105c403a660f',
+35 silly install resolved     bugs: { url: 'https://github.com/expressjs/generator/issues' },
+35 silly install resolved     homepage: 'https://github.com/expressjs/generator',
+35 silly install resolved     _id: 'express-generator@4.13.4',
+35 silly install resolved     _shasum: '3abec2e5e7b548820075024954ff7fa6a447e5eb',
+35 silly install resolved     _from: 'express-generator@*',
+35 silly install resolved     _npmVersion: '1.4.28',
+35 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: '3abec2e5e7b548820075024954ff7fa6a447e5eb',
+35 silly install resolved        tarball: 'https://registry.npmjs.org/express-generator/-/express-generator-4.13.4.tgz' },
+35 silly install resolved     _npmOperationalInternal:
+35 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+35 silly install resolved        tmp: 'tmp/express-generator-4.13.4.tgz_1466223574112_0.6206904440186918' },
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/express-generator/-/express-generator-4.13.4.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install express-generator@4.13.4 into C:\Users\vishaldk\AppData\Roaming\npm
+37 info installOne express-generator@4.13.4
+38 verbose installOne of express-generator to C:\Users\vishaldk\AppData\Roaming\npm not in flight; installing
+39 verbose lock using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\express-generator-0b804fdffe768bc8.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+40 silly install write writing express-generator 4.13.4 to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+41 verbose unbuild node_modules\express-generator
+42 info preuninstall express-generator@4.13.4
+43 info uninstall express-generator@4.13.4
+44 verbose unbuild rmStuff express-generator@4.13.4 from C:\Users\vishaldk\AppData\Roaming\npm\node_modules
+45 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\express.cmd is being gently removed
+46 silly gentlyRm verifying C:\Users\vishaldk\AppData\Roaming\npm is an npm working directory
+47 silly gentlyRm containing path C:\Users\vishaldk\AppData\Roaming\npm is under npm's control, in C:\Users\vishaldk\AppData\Roaming\npm
+48 silly gentlyRm deletion target C:\Users\vishaldk\AppData\Roaming\npm\express.cmd is under C:\Users\vishaldk\AppData\Roaming\npm
+49 verbose gentlyRm vacuuming from C:\Users\vishaldk\AppData\Roaming\npm\express.cmd up to C:\Users\vishaldk\AppData\Roaming\npm
+50 silly vacuum-fs removing C:\Users\vishaldk\AppData\Roaming\npm\express.cmd
+51 silly vacuum-fs finished vacuuming up to C:\Users\vishaldk\AppData\Roaming\npm
+52 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\express is being gently removed
+53 silly gentlyRm verifying C:\Users\vishaldk\AppData\Roaming\npm is an npm working directory
+54 silly gentlyRm containing path C:\Users\vishaldk\AppData\Roaming\npm is under npm's control, in C:\Users\vishaldk\AppData\Roaming\npm
+55 silly gentlyRm deletion target C:\Users\vishaldk\AppData\Roaming\npm\express is under C:\Users\vishaldk\AppData\Roaming\npm
+56 verbose gentlyRm vacuuming from C:\Users\vishaldk\AppData\Roaming\npm\express up to C:\Users\vishaldk\AppData\Roaming\npm
+57 silly vacuum-fs removing C:\Users\vishaldk\AppData\Roaming\npm\express
+58 silly vacuum-fs finished vacuuming up to C:\Users\vishaldk\AppData\Roaming\npm
+59 info postuninstall express-generator@4.13.4
+60 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator is being purged from base C:\Users\vishaldk\AppData\Roaming\npm
+61 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+62 silly vacuum-fs purging C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+63 silly vacuum-fs quitting because other entries in C:\Users\vishaldk\AppData\Roaming\npm\node_modules
+64 verbose tar unpack C:\Users\vishaldk\AppData\Roaming\npm-cache\express-generator\4.13.4\package.tgz
+65 verbose tar unpacking to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+66 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator is being purged
+67 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+68 silly gunzTarPerm modes [ '777', '666' ]
+69 silly gunzTarPerm extractEntry package.json
+70 silly gunzTarPerm extractEntry README.md
+71 silly gunzTarPerm extractEntry LICENSE
+72 silly gunzTarPerm extractEntry bin/express
+73 silly gunzTarPerm extractEntry templates/css/style.css
+74 silly gunzTarPerm extractEntry templates/css/style.less
+75 silly gunzTarPerm extractEntry templates/css/style.sass
+76 silly gunzTarPerm extractEntry templates/css/style.scss
+77 silly gunzTarPerm extractEntry templates/css/style.styl
+78 silly gunzTarPerm extractEntry templates/ejs/error.ejs
+79 silly gunzTarPerm extractEntry templates/ejs/index.ejs
+80 silly gunzTarPerm extractEntry templates/hbs/error.hbs
+81 silly gunzTarPerm extractEntry templates/hbs/index.hbs
+82 silly gunzTarPerm extractEntry templates/hbs/layout.hbs
+83 silly gunzTarPerm extractEntry templates/hogan/error.hjs
+84 silly gunzTarPerm extractEntry templates/hogan/index.hjs
+85 silly gunzTarPerm extractEntry templates/jade/error.jade
+86 silly gunzTarPerm extractEntry templates/jade/index.jade
+87 silly gunzTarPerm extractEntry templates/jade/layout.jade
+88 silly gunzTarPerm extractEntry templates/js/app.js
+89 silly gunzTarPerm extractEntry templates/js/gitignore
+90 silly gunzTarPerm extractEntry templates/js/routes/index.js
+91 silly gunzTarPerm extractEntry templates/js/routes/users.js
+92 silly gunzTarPerm extractEntry templates/js/www
+93 verbose write writing to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\package.json
+94 info preinstall express-generator@4.13.4
+95 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\package.json
+96 silly prepareForInstallMany adding commander@2.7.1 from express-generator dependencies
+97 silly prepareForInstallMany adding mkdirp@0.5.1 from express-generator dependencies
+98 silly prepareForInstallMany adding sorted-object@2.0.0 from express-generator dependencies
+99 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\package.json
+100 silly cache add args [ 'mkdirp@0.5.1', null ]
+101 verbose cache add spec mkdirp@0.5.1
+102 silly cache add parsed spec Result {
+102 silly cache add   raw: 'mkdirp@0.5.1',
+102 silly cache add   scope: null,
+102 silly cache add   name: 'mkdirp',
+102 silly cache add   rawSpec: '0.5.1',
+102 silly cache add   spec: '0.5.1',
+102 silly cache add   type: 'version' }
+103 silly addNamed mkdirp@0.5.1
+104 verbose addNamed "0.5.1" is a plain semver version for mkdirp
+105 silly mapToRegistry name mkdirp
+106 silly mapToRegistry using default registry
+107 silly mapToRegistry registry https://registry.npmjs.org/
+108 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+109 verbose addNameVersion registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+110 silly cache add args [ 'sorted-object@2.0.0', null ]
+111 verbose cache add spec sorted-object@2.0.0
+112 silly cache add parsed spec Result {
+112 silly cache add   raw: 'sorted-object@2.0.0',
+112 silly cache add   scope: null,
+112 silly cache add   name: 'sorted-object',
+112 silly cache add   rawSpec: '2.0.0',
+112 silly cache add   spec: '2.0.0',
+112 silly cache add   type: 'version' }
+113 silly addNamed sorted-object@2.0.0
+114 verbose addNamed "2.0.0" is a plain semver version for sorted-object
+115 silly mapToRegistry name sorted-object
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry uri https://registry.npmjs.org/sorted-object
+119 verbose addNameVersion registry:https://registry.npmjs.org/sorted-object not in flight; fetching
+120 silly cache add args [ 'commander@2.7.1', null ]
+121 verbose cache add spec commander@2.7.1
+122 silly cache add parsed spec Result {
+122 silly cache add   raw: 'commander@2.7.1',
+122 silly cache add   scope: null,
+122 silly cache add   name: 'commander',
+122 silly cache add   rawSpec: '2.7.1',
+122 silly cache add   spec: '2.7.1',
+122 silly cache add   type: 'version' }
+123 silly addNamed commander@2.7.1
+124 verbose addNamed "2.7.1" is a plain semver version for commander
+125 silly mapToRegistry name commander
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry uri https://registry.npmjs.org/commander
+129 verbose addNameVersion registry:https://registry.npmjs.org/commander not in flight; fetching
+130 verbose request uri https://registry.npmjs.org/sorted-object
+131 verbose request no auth needed
+132 info attempt registry request try #1 at 4:59:53 PM
+133 verbose etag "1Y214Q7M8ZAY3XUXCB0RJEOG6"
+134 http request GET https://registry.npmjs.org/sorted-object
+135 verbose request uri https://registry.npmjs.org/mkdirp
+136 verbose request no auth needed
+137 info attempt registry request try #1 at 4:59:53 PM
+138 verbose etag "E8J66CUZH1TMSXVH4XCVYY6BF"
+139 http request GET https://registry.npmjs.org/mkdirp
+140 verbose request uri https://registry.npmjs.org/commander
+141 verbose request no auth needed
+142 info attempt registry request try #1 at 4:59:53 PM
+143 verbose etag "6NC4FZI7MI3W0RS6DDMDLH27L"
+144 http request GET https://registry.npmjs.org/commander
+145 http 304 https://registry.npmjs.org/mkdirp
+146 verbose headers { date: 'Tue, 09 Aug 2016 11:29:54 GMT',
+146 verbose headers   via: '1.1 varnish',
+146 verbose headers   'cache-control': 'max-age=300',
+146 verbose headers   etag: '"E8J66CUZH1TMSXVH4XCVYY6BF"',
+146 verbose headers   age: '28',
+146 verbose headers   connection: 'keep-alive',
+146 verbose headers   'x-served-by': 'cache-sin6923-SIN',
+146 verbose headers   'x-cache': 'HIT',
+146 verbose headers   'x-cache-hits': '10',
+146 verbose headers   'x-timer': 'S1470742194.232307,VS0,VE0',
+146 verbose headers   vary: 'Accept-Encoding' }
+147 silly get cb [ 304,
+147 silly get   { date: 'Tue, 09 Aug 2016 11:29:54 GMT',
+147 silly get     via: '1.1 varnish',
+147 silly get     'cache-control': 'max-age=300',
+147 silly get     etag: '"E8J66CUZH1TMSXVH4XCVYY6BF"',
+147 silly get     age: '28',
+147 silly get     connection: 'keep-alive',
+147 silly get     'x-served-by': 'cache-sin6923-SIN',
+147 silly get     'x-cache': 'HIT',
+147 silly get     'x-cache-hits': '10',
+147 silly get     'x-timer': 'S1470742194.232307,VS0,VE0',
+147 silly get     vary: 'Accept-Encoding' } ]
+148 verbose etag https://registry.npmjs.org/mkdirp from cache
+149 verbose get saving mkdirp to C:\Users\vishaldk\AppData\Roaming\npm-cache\registry.npmjs.org\mkdirp\.cache.json
+150 silly cache afterAdd mkdirp@0.5.1
+151 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\mkdirp\0.5.1\package\package.json not in flight; writing
+152 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\mkdirp\0.5.1\package\package.json written
+153 http 304 https://registry.npmjs.org/sorted-object
+154 verbose headers { date: 'Tue, 09 Aug 2016 11:29:54 GMT',
+154 verbose headers   via: '1.1 varnish',
+154 verbose headers   'cache-control': 'max-age=300',
+154 verbose headers   etag: '"1Y214Q7M8ZAY3XUXCB0RJEOG6"',
+154 verbose headers   age: '132',
+154 verbose headers   connection: 'keep-alive',
+154 verbose headers   'x-served-by': 'cache-sin6920-SIN',
+154 verbose headers   'x-cache': 'HIT',
+154 verbose headers   'x-cache-hits': '2',
+154 verbose headers   'x-timer': 'S1470742194.277386,VS0,VE0',
+154 verbose headers   vary: 'Accept-Encoding' }
+155 silly get cb [ 304,
+155 silly get   { date: 'Tue, 09 Aug 2016 11:29:54 GMT',
+155 silly get     via: '1.1 varnish',
+155 silly get     'cache-control': 'max-age=300',
+155 silly get     etag: '"1Y214Q7M8ZAY3XUXCB0RJEOG6"',
+155 silly get     age: '132',
+155 silly get     connection: 'keep-alive',
+155 silly get     'x-served-by': 'cache-sin6920-SIN',
+155 silly get     'x-cache': 'HIT',
+155 silly get     'x-cache-hits': '2',
+155 silly get     'x-timer': 'S1470742194.277386,VS0,VE0',
+155 silly get     vary: 'Accept-Encoding' } ]
+156 verbose etag https://registry.npmjs.org/sorted-object from cache
+157 verbose get saving sorted-object to C:\Users\vishaldk\AppData\Roaming\npm-cache\registry.npmjs.org\sorted-object\.cache.json
+158 silly cache afterAdd sorted-object@2.0.0
+159 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\sorted-object\2.0.0\package\package.json not in flight; writing
+160 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\sorted-object\2.0.0\package\package.json written
+161 http 304 https://registry.npmjs.org/commander
+162 verbose headers { date: 'Tue, 09 Aug 2016 11:29:54 GMT',
+162 verbose headers   via: '1.1 varnish',
+162 verbose headers   'cache-control': 'max-age=300',
+162 verbose headers   etag: '"6NC4FZI7MI3W0RS6DDMDLH27L"',
+162 verbose headers   age: '69',
+162 verbose headers   connection: 'keep-alive',
+162 verbose headers   'x-served-by': 'cache-sin6923-SIN',
+162 verbose headers   'x-cache': 'HIT',
+162 verbose headers   'x-cache-hits': '8',
+162 verbose headers   'x-timer': 'S1470742194.346212,VS0,VE0',
+162 verbose headers   vary: 'Accept-Encoding' }
+163 silly get cb [ 304,
+163 silly get   { date: 'Tue, 09 Aug 2016 11:29:54 GMT',
+163 silly get     via: '1.1 varnish',
+163 silly get     'cache-control': 'max-age=300',
+163 silly get     etag: '"6NC4FZI7MI3W0RS6DDMDLH27L"',
+163 silly get     age: '69',
+163 silly get     connection: 'keep-alive',
+163 silly get     'x-served-by': 'cache-sin6923-SIN',
+163 silly get     'x-cache': 'HIT',
+163 silly get     'x-cache-hits': '8',
+163 silly get     'x-timer': 'S1470742194.346212,VS0,VE0',
+163 silly get     vary: 'Accept-Encoding' } ]
+164 verbose etag https://registry.npmjs.org/commander from cache
+165 verbose get saving commander to C:\Users\vishaldk\AppData\Roaming\npm-cache\registry.npmjs.org\commander\.cache.json
+166 silly cache afterAdd commander@2.7.1
+167 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\commander\2.7.1\package\package.json not in flight; writing
+168 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\commander\2.7.1\package\package.json written
+169 silly install resolved [ { name: 'mkdirp',
+169 silly install resolved     description: 'Recursively mkdir, like `mkdir -p`',
+169 silly install resolved     version: '0.5.1',
+169 silly install resolved     author:
+169 silly install resolved      { name: 'James Halliday',
+169 silly install resolved        email: 'mail@substack.net',
+169 silly install resolved        url: 'http://substack.net' },
+169 silly install resolved     main: 'index.js',
+169 silly install resolved     keywords: [ 'mkdir', 'directory' ],
+169 silly install resolved     repository:
+169 silly install resolved      { type: 'git',
+169 silly install resolved        url: 'git+https://github.com/substack/node-mkdirp.git' },
+169 silly install resolved     scripts: { test: 'tap test/*.js' },
+169 silly install resolved     dependencies: { minimist: '0.0.8' },
+169 silly install resolved     devDependencies: { tap: '1', 'mock-fs': '2 >=2.7.0' },
+169 silly install resolved     bin: { mkdirp: 'bin/cmd.js' },
+169 silly install resolved     license: 'MIT',
+169 silly install resolved     gitHead: 'd4eff0f06093aed4f387e88e9fc301cb76beedc7',
+169 silly install resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+169 silly install resolved     homepage: 'https://github.com/substack/node-mkdirp#readme',
+169 silly install resolved     _id: 'mkdirp@0.5.1',
+169 silly install resolved     _shasum: '30057438eac6cf7f8c4767f38648d6697d75c903',
+169 silly install resolved     _from: 'mkdirp@0.5.1',
+169 silly install resolved     _npmVersion: '2.9.0',
+169 silly install resolved     _nodeVersion: '2.0.0',
+169 silly install resolved     _npmUser: { name: 'substack', email: 'substack@gmail.com' },
+169 silly install resolved     dist:
+169 silly install resolved      { shasum: '30057438eac6cf7f8c4767f38648d6697d75c903',
+169 silly install resolved        tarball: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz' },
+169 silly install resolved     maintainers: [ [Object] ],
+169 silly install resolved     directories: {},
+169 silly install resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz',
+169 silly install resolved     readme: 'ERROR: No README data found!' },
+169 silly install resolved   { name: 'sorted-object',
+169 silly install resolved     description: 'Returns a copy of an object with its keys sorted',
+169 silly install resolved     keywords: [ 'sort', 'keys', 'object' ],
+169 silly install resolved     version: '2.0.0',
+169 silly install resolved     author:
+169 silly install resolved      { name: 'Domenic Denicola',
+169 silly install resolved        email: 'd@domenic.me',
+169 silly install resolved        url: 'https://domenic.me/' },
+169 silly install resolved     license: 'WTFPL',
+169 silly install resolved     repository:
+169 silly install resolved      { type: 'git',
+169 silly install resolved        url: 'git+https://github.com/domenic/sorted-object.git' },
+169 silly install resolved     main: 'lib/sorted-object.js',
+169 silly install resolved     files: [ 'lib/' ],
+169 silly install resolved     scripts: { test: 'tape test/tests.js', lint: 'eslint .' },
+169 silly install resolved     devDependencies: { eslint: '^2.4.0', tape: '^4.5.1' },
+169 silly install resolved     gitHead: '3cbdde212c8ceef219fbb8fa7805bfc38b94aa90',
+169 silly install resolved     bugs: { url: 'https://github.com/domenic/sorted-object/issues' },
+169 silly install resolved     homepage: 'https://github.com/domenic/sorted-object#readme',
+169 silly install resolved     _id: 'sorted-object@2.0.0',
+169 silly install resolved     _shasum: '1cfea981609047d8043807a490a9d99b317faf7f',
+169 silly install resolved     _from: 'sorted-object@2.0.0',
+169 silly install resolved     _npmVersion: '3.6.0',
+169 silly install resolved     _nodeVersion: '5.7.1',
+169 silly install resolved     _npmUser: { name: 'domenic', email: 'd@domenic.me' },
+169 silly install resolved     dist:
+169 silly install resolved      { shasum: '1cfea981609047d8043807a490a9d99b317faf7f',
+169 silly install resolved        tarball: 'https://registry.npmjs.org/sorted-object/-/sorted-object-2.0.0.tgz' },
+169 silly install resolved     maintainers: [ [Object] ],
+169 silly install resolved     _npmOperationalInternal:
+169 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+169 silly install resolved        tmp: 'tmp/sorted-object-2.0.0.tgz_1457910693572_0.6718082851730287' },
+169 silly install resolved     directories: {},
+169 silly install resolved     _resolved: 'https://registry.npmjs.org/sorted-object/-/sorted-object-2.0.0.tgz',
+169 silly install resolved     readme: 'ERROR: No README data found!' },
+169 silly install resolved   { name: 'commander',
+169 silly install resolved     version: '2.7.1',
+169 silly install resolved     description: 'the complete solution for node.js command-line programs',
+169 silly install resolved     keywords: [ 'command', 'option', 'parser' ],
+169 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+169 silly install resolved     license: 'MIT',
+169 silly install resolved     repository:
+169 silly install resolved      { type: 'git',
+169 silly install resolved        url: 'git+https://github.com/tj/commander.js.git' },
+169 silly install resolved     devDependencies: { should: '>= 0.0.1' },
+169 silly install resolved     scripts: { test: 'make test' },
+169 silly install resolved     main: 'index',
+169 silly install resolved     engines: { node: '>= 0.6.x' },
+169 silly install resolved     files: [ 'index.js' ],
+169 silly install resolved     dependencies: { 'graceful-readlink': '>= 1.0.0' },
+169 silly install resolved     gitHead: '103654f8f32c010ad1e62cefc9ab92d7c8d18c8e',
+169 silly install resolved     bugs: { url: 'https://github.com/tj/commander.js/issues' },
+169 silly install resolved     homepage: 'https://github.com/tj/commander.js',
+169 silly install resolved     _id: 'commander@2.7.1',
+169 silly install resolved     _shasum: '5d419a2bbed2c32ee3e4dca9bb45ab83ecc3065a',
+169 silly install resolved     _from: 'commander@2.7.1',
+169 silly install resolved     _npmVersion: '2.1.17',
+169 silly install resolved     _nodeVersion: '0.11.14',
+169 silly install resolved     _npmUser: { name: 'zhiyelee', email: 'zhiyelee@gmail.com' },
+169 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+169 silly install resolved     dist:
+169 silly install resolved      { shasum: '5d419a2bbed2c32ee3e4dca9bb45ab83ecc3065a',
+169 silly install resolved        tarball: 'https://registry.npmjs.org/commander/-/commander-2.7.1.tgz' },
+169 silly install resolved     directories: {},
+169 silly install resolved     _resolved: 'https://registry.npmjs.org/commander/-/commander-2.7.1.tgz',
+169 silly install resolved     readme: 'ERROR: No README data found!' } ]
+170 info install mkdirp@0.5.1 into C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+171 info install sorted-object@2.0.0 into C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+172 info install commander@2.7.1 into C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+173 info installOne mkdirp@0.5.1
+174 verbose installOne of mkdirp to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator not in flight; installing
+175 info installOne sorted-object@2.0.0
+176 verbose installOne of sorted-object to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator not in flight; installing
+177 info installOne commander@2.7.1
+178 verbose installOne of commander to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator not in flight; installing
+179 verbose lock using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\sorted-object-7259146ae9cb728a.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object
+180 verbose lock using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\mkdirp-a61b186cd9c7a19c.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp
+181 verbose lock using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\commander-ea168278a2daf8d6.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander
+182 silly install write writing sorted-object 2.0.0 to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object
+183 silly install write writing mkdirp 0.5.1 to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp
+184 silly install write writing commander 2.7.1 to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander
+185 verbose unbuild node_modules\express-generator\node_modules\sorted-object
+186 verbose unbuild node_modules\express-generator\node_modules\commander
+187 verbose unbuild node_modules\express-generator\node_modules\mkdirp
+188 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object is being purged from base C:\Users\vishaldk\AppData\Roaming\npm
+189 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object
+190 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander is being purged from base C:\Users\vishaldk\AppData\Roaming\npm
+191 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander
+192 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp is being purged from base C:\Users\vishaldk\AppData\Roaming\npm
+193 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp
+194 verbose tar unpack C:\Users\vishaldk\AppData\Roaming\npm-cache\sorted-object\2.0.0\package.tgz
+195 verbose tar unpacking to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object
+196 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object is being purged
+197 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object
+198 verbose tar unpack C:\Users\vishaldk\AppData\Roaming\npm-cache\commander\2.7.1\package.tgz
+199 verbose tar unpacking to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander
+200 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander is being purged
+201 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander
+202 verbose tar unpack C:\Users\vishaldk\AppData\Roaming\npm-cache\mkdirp\0.5.1\package.tgz
+203 verbose tar unpacking to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp
+204 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp is being purged
+205 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp
+206 silly gunzTarPerm modes [ '777', '666' ]
+207 silly gunzTarPerm modes [ '777', '666' ]
+208 silly gunzTarPerm modes [ '777', '666' ]
+209 silly gunzTarPerm extractEntry package.json
+210 silly gunzTarPerm extractEntry package.json
+211 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+212 silly gunzTarPerm extractEntry package.json
+213 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+214 silly gunzTarPerm extractEntry LICENSE
+215 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+216 silly gunzTarPerm extractEntry index.js
+217 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+218 silly gunzTarPerm extractEntry README.md
+219 silly gunzTarPerm extractEntry LICENSE.txt
+220 silly gunzTarPerm extractEntry LICENSE
+221 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+222 silly gunzTarPerm extractEntry index.js
+223 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+224 silly gunzTarPerm extractEntry lib/sorted-object.js
+225 silly gunzTarPerm extractEntry .travis.yml
+226 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+227 silly gunzTarPerm extractEntry bin/cmd.js
+228 silly gunzTarPerm modified mode [ 'bin/cmd.js', 493, 511 ]
+229 silly gunzTarPerm extractEntry History.md
+230 silly gunzTarPerm modified mode [ 'History.md', 436, 438 ]
+231 silly gunzTarPerm extractEntry Readme.md
+232 silly gunzTarPerm modified mode [ 'Readme.md', 436, 438 ]
+233 silly gunzTarPerm extractEntry bin/usage.txt
+234 silly gunzTarPerm modified mode [ 'bin/usage.txt', 420, 438 ]
+235 silly gunzTarPerm extractEntry examples/pow.js
+236 silly gunzTarPerm modified mode [ 'examples/pow.js', 420, 438 ]
+237 silly gunzTarPerm extractEntry readme.markdown
+238 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+239 silly gunzTarPerm extractEntry test/chmod.js
+240 silly gunzTarPerm modified mode [ 'test/chmod.js', 420, 438 ]
+241 silly gunzTarPerm extractEntry test/opts_fs_sync.js
+242 silly gunzTarPerm modified mode [ 'test/opts_fs_sync.js', 420, 438 ]
+243 verbose write writing to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object\package.json
+244 silly gunzTarPerm extractEntry test/perm.js
+245 silly gunzTarPerm modified mode [ 'test/perm.js', 420, 438 ]
+246 silly gunzTarPerm extractEntry test/perm_sync.js
+247 silly gunzTarPerm modified mode [ 'test/perm_sync.js', 420, 438 ]
+248 info preinstall sorted-object@2.0.0
+249 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object\package.json
+250 verbose write writing to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\package.json
+251 silly gunzTarPerm extractEntry test/opts_fs.js
+252 silly gunzTarPerm modified mode [ 'test/opts_fs.js', 420, 438 ]
+253 silly gunzTarPerm extractEntry test/rel.js
+254 silly gunzTarPerm modified mode [ 'test/rel.js', 420, 438 ]
+255 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object\package.json
+256 info preinstall commander@2.7.1
+257 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\package.json
+258 silly install resolved []
+259 verbose about to build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object
+260 info build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object
+261 silly prepareForInstallMany adding graceful-readlink@>= 1.0.0 from commander dependencies
+262 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\package.json
+263 info linkStuff sorted-object@2.0.0
+264 silly linkStuff sorted-object@2.0.0 has C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules as its parent node_modules
+265 silly linkStuff sorted-object@2.0.0 is part of a global install
+266 silly linkStuff sorted-object@2.0.0 is installed into a global node_modules
+267 verbose linkBins sorted-object@2.0.0
+268 verbose linkMans sorted-object@2.0.0
+269 verbose rebuildBundles sorted-object@2.0.0
+270 info install sorted-object@2.0.0
+271 silly gunzTarPerm extractEntry test/return.js
+272 silly gunzTarPerm modified mode [ 'test/return.js', 420, 438 ]
+273 silly gunzTarPerm extractEntry test/return_sync.js
+274 silly gunzTarPerm modified mode [ 'test/return_sync.js', 420, 438 ]
+275 info postinstall sorted-object@2.0.0
+276 silly cache add args [ 'graceful-readlink@>= 1.0.0', null ]
+277 verbose cache add spec graceful-readlink@>= 1.0.0
+278 silly cache add parsed spec Result {
+278 silly cache add   raw: 'graceful-readlink@>= 1.0.0',
+278 silly cache add   scope: null,
+278 silly cache add   name: 'graceful-readlink',
+278 silly cache add   rawSpec: '>= 1.0.0',
+278 silly cache add   spec: '>=1.0.0',
+278 silly cache add   type: 'range' }
+279 silly addNamed graceful-readlink@>=1.0.0
+280 verbose addNamed ">=1.0.0" is a valid semver range for graceful-readlink
+281 silly addNameRange { name: 'graceful-readlink', range: '>=1.0.0', hasData: false }
+282 silly mapToRegistry name graceful-readlink
+283 silly mapToRegistry using default registry
+284 silly mapToRegistry registry https://registry.npmjs.org/
+285 silly mapToRegistry uri https://registry.npmjs.org/graceful-readlink
+286 verbose addNameRange registry:https://registry.npmjs.org/graceful-readlink not in flight; fetching
+287 verbose unlock done using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\sorted-object-7259146ae9cb728a.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\sorted-object
+288 verbose request uri https://registry.npmjs.org/graceful-readlink
+289 verbose request no auth needed
+290 info attempt registry request try #1 at 4:59:54 PM
+291 verbose etag "4Y89F8JDJP0YPHGBB0IMVMPJA"
+292 http request GET https://registry.npmjs.org/graceful-readlink
+293 silly gunzTarPerm extractEntry test/root.js
+294 silly gunzTarPerm modified mode [ 'test/root.js', 420, 438 ]
+295 silly gunzTarPerm extractEntry test/sync.js
+296 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
+297 silly gunzTarPerm extractEntry test/mkdirp.js
+298 silly gunzTarPerm modified mode [ 'test/mkdirp.js', 420, 438 ]
+299 silly gunzTarPerm extractEntry test/umask.js
+300 silly gunzTarPerm modified mode [ 'test/umask.js', 420, 438 ]
+301 silly gunzTarPerm extractEntry test/clobber.js
+302 silly gunzTarPerm modified mode [ 'test/clobber.js', 420, 438 ]
+303 silly gunzTarPerm extractEntry test/umask_sync.js
+304 silly gunzTarPerm modified mode [ 'test/umask_sync.js', 420, 438 ]
+305 silly gunzTarPerm extractEntry test/race.js
+306 silly gunzTarPerm modified mode [ 'test/race.js', 420, 438 ]
+307 verbose write writing to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\package.json
+308 info preinstall mkdirp@0.5.1
+309 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\package.json
+310 silly prepareForInstallMany adding minimist@0.0.8 from mkdirp dependencies
+311 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\package.json
+312 silly cache add args [ 'minimist@0.0.8', null ]
+313 verbose cache add spec minimist@0.0.8
+314 silly cache add parsed spec Result {
+314 silly cache add   raw: 'minimist@0.0.8',
+314 silly cache add   scope: null,
+314 silly cache add   name: 'minimist',
+314 silly cache add   rawSpec: '0.0.8',
+314 silly cache add   spec: '0.0.8',
+314 silly cache add   type: 'version' }
+315 silly addNamed minimist@0.0.8
+316 verbose addNamed "0.0.8" is a plain semver version for minimist
+317 silly mapToRegistry name minimist
+318 silly mapToRegistry using default registry
+319 silly mapToRegistry registry https://registry.npmjs.org/
+320 silly mapToRegistry uri https://registry.npmjs.org/minimist
+321 verbose addNameVersion registry:https://registry.npmjs.org/minimist not in flight; fetching
+322 verbose request uri https://registry.npmjs.org/minimist
+323 verbose request no auth needed
+324 info attempt registry request try #1 at 4:59:54 PM
+325 verbose etag "3N02P4EJWAWCAY519D2G3V0F5"
+326 http request GET https://registry.npmjs.org/minimist
+327 http 304 https://registry.npmjs.org/graceful-readlink
+328 verbose headers { date: 'Tue, 09 Aug 2016 11:29:55 GMT',
+328 verbose headers   via: '1.1 varnish',
+328 verbose headers   'cache-control': 'max-age=300',
+328 verbose headers   etag: '"4Y89F8JDJP0YPHGBB0IMVMPJA"',
+328 verbose headers   age: '241',
+328 verbose headers   connection: 'keep-alive',
+328 verbose headers   'x-served-by': 'cache-sin6926-SIN',
+328 verbose headers   'x-cache': 'HIT',
+328 verbose headers   'x-cache-hits': '26',
+328 verbose headers   'x-timer': 'S1470742195.021885,VS0,VE0',
+328 verbose headers   vary: 'Accept-Encoding' }
+329 silly get cb [ 304,
+329 silly get   { date: 'Tue, 09 Aug 2016 11:29:55 GMT',
+329 silly get     via: '1.1 varnish',
+329 silly get     'cache-control': 'max-age=300',
+329 silly get     etag: '"4Y89F8JDJP0YPHGBB0IMVMPJA"',
+329 silly get     age: '241',
+329 silly get     connection: 'keep-alive',
+329 silly get     'x-served-by': 'cache-sin6926-SIN',
+329 silly get     'x-cache': 'HIT',
+329 silly get     'x-cache-hits': '26',
+329 silly get     'x-timer': 'S1470742195.021885,VS0,VE0',
+329 silly get     vary: 'Accept-Encoding' } ]
+330 verbose etag https://registry.npmjs.org/graceful-readlink from cache
+331 verbose get saving graceful-readlink to C:\Users\vishaldk\AppData\Roaming\npm-cache\registry.npmjs.org\graceful-readlink\.cache.json
+332 silly addNameRange number 2 { name: 'graceful-readlink', range: '>=1.0.0', hasData: true }
+333 silly addNameRange versions [ 'graceful-readlink', [ '1.0.0', '1.0.1' ] ]
+334 silly addNamed graceful-readlink@1.0.1
+335 verbose addNamed "1.0.1" is a plain semver version for graceful-readlink
+336 silly cache afterAdd graceful-readlink@1.0.1
+337 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\graceful-readlink\1.0.1\package\package.json not in flight; writing
+338 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\graceful-readlink\1.0.1\package\package.json written
+339 silly install resolved [ { name: 'graceful-readlink',
+339 silly install resolved     version: '1.0.1',
+339 silly install resolved     description: 'graceful fs.readlink',
+339 silly install resolved     main: 'index.js',
+339 silly install resolved     repository:
+339 silly install resolved      { type: 'git',
+339 silly install resolved        url: 'git://github.com/zhiyelee/graceful-readlink.git' },
+339 silly install resolved     homepage: 'https://github.com/zhiyelee/graceful-readlink',
+339 silly install resolved     bugs: { url: 'https://github.com/zhiyelee/graceful-readlink/issues' },
+339 silly install resolved     keywords: [ 'fs.readlink', 'readlink' ],
+339 silly install resolved     author: { name: 'zhiyelee' },
+339 silly install resolved     license: 'MIT',
+339 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+339 silly install resolved     gitHead: 'f6655275bebef706fb63fd01b5f062a7052419a5',
+339 silly install resolved     _id: 'graceful-readlink@1.0.1',
+339 silly install resolved     _shasum: '4cafad76bc62f02fa039b2f94e9a3dd3a391a725',
+339 silly install resolved     _from: 'graceful-readlink@>=1.0.0',
+339 silly install resolved     _npmVersion: '2.1.17',
+339 silly install resolved     _nodeVersion: '0.11.14',
+339 silly install resolved     _npmUser: { name: 'zhiyelee', email: 'zhiyelee@gmail.com' },
+339 silly install resolved     maintainers: [ [Object] ],
+339 silly install resolved     dist:
+339 silly install resolved      { shasum: '4cafad76bc62f02fa039b2f94e9a3dd3a391a725',
+339 silly install resolved        tarball: 'https://registry.npmjs.org/graceful-readlink/-/graceful-readlink-1.0.1.tgz' },
+339 silly install resolved     directories: {},
+339 silly install resolved     _resolved: 'https://registry.npmjs.org/graceful-readlink/-/graceful-readlink-1.0.1.tgz',
+339 silly install resolved     readme: 'ERROR: No README data found!' } ]
+340 info install graceful-readlink@1.0.1 into C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander
+341 info installOne graceful-readlink@1.0.1
+342 verbose installOne of graceful-readlink to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander not in flight; installing
+343 verbose lock using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\graceful-readlink-c436331b6291dad7.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink
+344 silly install write writing graceful-readlink 1.0.1 to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink
+345 verbose unbuild node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink
+346 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink is being purged from base C:\Users\vishaldk\AppData\Roaming\npm
+347 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink
+348 verbose tar unpack C:\Users\vishaldk\AppData\Roaming\npm-cache\graceful-readlink\1.0.1\package.tgz
+349 verbose tar unpacking to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink
+350 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink is being purged
+351 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink
+352 silly gunzTarPerm modes [ '777', '666' ]
+353 silly gunzTarPerm extractEntry package.json
+354 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+355 silly gunzTarPerm extractEntry .npmignore
+356 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+357 silly gunzTarPerm extractEntry README.md
+358 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+359 http 304 https://registry.npmjs.org/minimist
+360 verbose headers { date: 'Tue, 09 Aug 2016 11:29:55 GMT',
+360 verbose headers   via: '1.1 varnish',
+360 verbose headers   'cache-control': 'max-age=300',
+360 verbose headers   etag: '"3N02P4EJWAWCAY519D2G3V0F5"',
+360 verbose headers   age: '33',
+360 verbose headers   connection: 'keep-alive',
+360 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+360 verbose headers   'x-cache': 'HIT',
+360 verbose headers   'x-cache-hits': '6',
+360 verbose headers   'x-timer': 'S1470742195.041572,VS0,VE0',
+360 verbose headers   vary: 'Accept-Encoding' }
+361 silly get cb [ 304,
+361 silly get   { date: 'Tue, 09 Aug 2016 11:29:55 GMT',
+361 silly get     via: '1.1 varnish',
+361 silly get     'cache-control': 'max-age=300',
+361 silly get     etag: '"3N02P4EJWAWCAY519D2G3V0F5"',
+361 silly get     age: '33',
+361 silly get     connection: 'keep-alive',
+361 silly get     'x-served-by': 'cache-sin6921-SIN',
+361 silly get     'x-cache': 'HIT',
+361 silly get     'x-cache-hits': '6',
+361 silly get     'x-timer': 'S1470742195.041572,VS0,VE0',
+361 silly get     vary: 'Accept-Encoding' } ]
+362 verbose etag https://registry.npmjs.org/minimist from cache
+363 verbose get saving minimist to C:\Users\vishaldk\AppData\Roaming\npm-cache\registry.npmjs.org\minimist\.cache.json
+364 silly gunzTarPerm extractEntry LICENSE
+365 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+366 silly gunzTarPerm extractEntry index.js
+367 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+368 silly gunzTarPerm extractEntry .travis.yml
+369 silly gunzTarPerm modified mode [ '.travis.yml', 436, 438 ]
+370 silly cache afterAdd minimist@0.0.8
+371 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\minimist\0.0.8\package\package.json not in flight; writing
+372 verbose afterAdd C:\Users\vishaldk\AppData\Roaming\npm-cache\minimist\0.0.8\package\package.json written
+373 silly install resolved [ { name: 'minimist',
+373 silly install resolved     version: '0.0.8',
+373 silly install resolved     description: 'parse argument options',
+373 silly install resolved     main: 'index.js',
+373 silly install resolved     devDependencies: { tape: '~1.0.4', tap: '~0.4.0' },
+373 silly install resolved     scripts: { test: 'tap test/*.js' },
+373 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+373 silly install resolved     repository: { type: 'git', url: 'git://github.com/substack/minimist.git' },
+373 silly install resolved     homepage: 'https://github.com/substack/minimist',
+373 silly install resolved     keywords: [ 'argv', 'getopt', 'parser', 'optimist' ],
+373 silly install resolved     author:
+373 silly install resolved      { name: 'James Halliday',
+373 silly install resolved        email: 'mail@substack.net',
+373 silly install resolved        url: 'http://substack.net' },
+373 silly install resolved     license: 'MIT',
+373 silly install resolved     bugs: { url: 'https://github.com/substack/minimist/issues' },
+373 silly install resolved     _id: 'minimist@0.0.8',
+373 silly install resolved     dist:
+373 silly install resolved      { shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+373 silly install resolved        tarball: 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz' },
+373 silly install resolved     _from: 'minimist@0.0.8',
+373 silly install resolved     _npmVersion: '1.4.3',
+373 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+373 silly install resolved     maintainers: [ [Object] ],
+373 silly install resolved     directories: {},
+373 silly install resolved     _shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+373 silly install resolved     _resolved: 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz',
+373 silly install resolved     readme: 'ERROR: No README data found!' } ]
+374 info install minimist@0.0.8 into C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp
+375 info installOne minimist@0.0.8
+376 verbose installOne of minimist to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp not in flight; installing
+377 verbose lock using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\minimist-62304cdf6b38b355.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist
+378 silly install write writing minimist 0.0.8 to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist
+379 verbose unbuild node_modules\express-generator\node_modules\mkdirp\node_modules\minimist
+380 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist is being purged from base C:\Users\vishaldk\AppData\Roaming\npm
+381 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist
+382 verbose tar unpack C:\Users\vishaldk\AppData\Roaming\npm-cache\minimist\0.0.8\package.tgz
+383 verbose tar unpacking to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist
+384 silly gentlyRm C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist is being purged
+385 verbose gentlyRm don't care about contents; nuking C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist
+386 silly gunzTarPerm modes [ '777', '666' ]
+387 silly gunzTarPerm extractEntry package.json
+388 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+389 silly gunzTarPerm extractEntry LICENSE
+390 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+391 silly gunzTarPerm extractEntry index.js
+392 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+393 verbose write writing to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink\package.json
+394 silly gunzTarPerm extractEntry .travis.yml
+395 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+396 silly gunzTarPerm extractEntry example/parse.js
+397 silly gunzTarPerm modified mode [ 'example/parse.js', 420, 438 ]
+398 info preinstall graceful-readlink@1.0.1
+399 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink\package.json
+400 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink\package.json
+401 silly gunzTarPerm extractEntry readme.markdown
+402 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+403 silly gunzTarPerm extractEntry test/dash.js
+404 silly gunzTarPerm modified mode [ 'test/dash.js', 420, 438 ]
+405 silly install resolved []
+406 verbose about to build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink
+407 info build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink
+408 info linkStuff graceful-readlink@1.0.1
+409 silly linkStuff graceful-readlink@1.0.1 has C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules as its parent node_modules
+410 silly linkStuff graceful-readlink@1.0.1 is part of a global install
+411 silly linkStuff graceful-readlink@1.0.1 is installed into a global node_modules
+412 verbose linkBins graceful-readlink@1.0.1
+413 verbose linkMans graceful-readlink@1.0.1
+414 verbose rebuildBundles graceful-readlink@1.0.1
+415 info install graceful-readlink@1.0.1
+416 info postinstall graceful-readlink@1.0.1
+417 verbose unlock done using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\graceful-readlink-c436331b6291dad7.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander\node_modules\graceful-readlink
+418 verbose about to build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander
+419 info build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander
+420 silly gunzTarPerm extractEntry test/default_bool.js
+421 silly gunzTarPerm modified mode [ 'test/default_bool.js', 420, 438 ]
+422 silly gunzTarPerm extractEntry test/dotted.js
+423 silly gunzTarPerm modified mode [ 'test/dotted.js', 420, 438 ]
+424 silly gunzTarPerm extractEntry test/long.js
+425 silly gunzTarPerm modified mode [ 'test/long.js', 420, 438 ]
+426 silly gunzTarPerm extractEntry test/parse.js
+427 silly gunzTarPerm modified mode [ 'test/parse.js', 420, 438 ]
+428 silly gunzTarPerm extractEntry test/parse_modified.js
+429 silly gunzTarPerm modified mode [ 'test/parse_modified.js', 420, 438 ]
+430 silly gunzTarPerm extractEntry test/short.js
+431 silly gunzTarPerm modified mode [ 'test/short.js', 420, 438 ]
+432 silly gunzTarPerm extractEntry test/whitespace.js
+433 silly gunzTarPerm modified mode [ 'test/whitespace.js', 420, 438 ]
+434 info linkStuff commander@2.7.1
+435 silly linkStuff commander@2.7.1 has C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules as its parent node_modules
+436 silly linkStuff commander@2.7.1 is part of a global install
+437 silly linkStuff commander@2.7.1 is installed into a global node_modules
+438 verbose linkBins commander@2.7.1
+439 verbose linkMans commander@2.7.1
+440 verbose rebuildBundles commander@2.7.1
+441 verbose rebuildBundles [ 'graceful-readlink' ]
+442 info install commander@2.7.1
+443 info postinstall commander@2.7.1
+444 verbose unlock done using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\commander-ea168278a2daf8d6.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\commander
+445 verbose write writing to C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist\package.json
+446 info preinstall minimist@0.0.8
+447 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist\package.json
+448 verbose readDependencies loading dependencies from C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist\package.json
+449 silly install resolved []
+450 verbose about to build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist
+451 info build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist
+452 info linkStuff minimist@0.0.8
+453 silly linkStuff minimist@0.0.8 has C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules as its parent node_modules
+454 silly linkStuff minimist@0.0.8 is part of a global install
+455 silly linkStuff minimist@0.0.8 is installed into a global node_modules
+456 verbose linkBins minimist@0.0.8
+457 verbose linkMans minimist@0.0.8
+458 verbose rebuildBundles minimist@0.0.8
+459 info install minimist@0.0.8
+460 info postinstall minimist@0.0.8
+461 verbose unlock done using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\minimist-62304cdf6b38b355.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp\node_modules\minimist
+462 verbose about to build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp
+463 info build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp
+464 info linkStuff mkdirp@0.5.1
+465 silly linkStuff mkdirp@0.5.1 has C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules as its parent node_modules
+466 silly linkStuff mkdirp@0.5.1 is part of a global install
+467 silly linkStuff mkdirp@0.5.1 is installed into a global node_modules
+468 verbose linkBins mkdirp@0.5.1
+469 verbose link bins [ { mkdirp: 'bin/cmd.js' },
+469 verbose link bins   'C:\\Users\\vishaldk\\AppData\\Roaming\\npm\\node_modules\\express-generator\\node_modules\\.bin',
+469 verbose link bins   false ]
+470 verbose linkMans mkdirp@0.5.1
+471 verbose rebuildBundles mkdirp@0.5.1
+472 verbose rebuildBundles [ 'minimist' ]
+473 info install mkdirp@0.5.1
+474 info postinstall mkdirp@0.5.1
+475 verbose unlock done using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\mkdirp-a61b186cd9c7a19c.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator\node_modules\mkdirp
+476 verbose about to build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+477 info build C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+478 info linkStuff express-generator@4.13.4
+479 silly linkStuff express-generator@4.13.4 has C:\Users\vishaldk\AppData\Roaming\npm\node_modules as its parent node_modules
+480 silly linkStuff express-generator@4.13.4 is part of a global install
+481 silly linkStuff express-generator@4.13.4 is installed into a global node_modules
+482 silly linkStuff express-generator@4.13.4 is installed into the top-level global node_modules
+483 verbose linkBins express-generator@4.13.4
+484 verbose link bins [ { express: './bin/express' },
+484 verbose link bins   'C:\\Users\\vishaldk\\AppData\\Roaming\\npm',
+484 verbose link bins   true ]
+485 verbose linkMans express-generator@4.13.4
+486 verbose rebuildBundles express-generator@4.13.4
+487 verbose rebuildBundles [ '.bin', 'commander', 'mkdirp', 'sorted-object' ]
+488 info install express-generator@4.13.4
+489 info postinstall express-generator@4.13.4
+490 verbose unlock done using C:\Users\vishaldk\AppData\Roaming\npm-cache\_locks\express-generator-0b804fdffe768bc8.lock for C:\Users\vishaldk\AppData\Roaming\npm\node_modules\express-generator
+491 verbose validateInstall loading C:\Users\vishaldk\AppData\Roaming\npm\package.json for validation
+492 verbose stack Error: The package hapi@13.3.0 does not satisfy its siblings' peerDependencies requirements!
+492 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
+492 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:268:7
+492 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
+492 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+492 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+492 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+492 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+492 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+492 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+492 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+493 verbose cwd D:\me\poc\mean
+494 error Windows_NT 10.0.10586
+495 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "express-generator"
+496 error node v4.2.1
+497 error npm  v2.14.7
+498 error code EPEERINVALID
+499 error peerinvalid The package hapi@13.3.0 does not satisfy its siblings' peerDependencies requirements!
+499 error peerinvalid Peer hapi-auth-cookie@6.1.1 wants hapi@>=11.x.x
+499 error peerinvalid Peer hapi-server-session@2.0.4 wants hapi@^8.8.0 || ^9.0.0 || ^10.0.0 || ^11.0.0
+500 verbose exit [ 1, true ]
